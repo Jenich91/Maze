@@ -1,0 +1,86 @@
+\input texinfo
+@comment %**start of header
+@settitle Maze v1.0 Manual
+@comment %**end of header
+
+Maze v1.0 User's Manual@*
+@*
+Description Maze v1.0@*
+@*
+The application provides a graphical Maze with support for the following features:@*
+Selecting a tab with a subroutine: caves, or labyrinth.@*
+I)In the cave tab:@*
+Data source mode selection:@*
+1)Generate a random cave with a selectable number of rows and columns, with a chance of a filled cell appearing.@*
+2)Or load data from a file, the file should look like:@*
+4 4@*
+0 1 0 1@*
+1 0 0 1@*
+0 1 0 0@*
+0 0 1 1@*
+Where is the number of rows and columns,@*
+as well as a matrix containing the position of "live" and "dead" cells.@*
+@*
+3)Setting the values of life and death variables.@*
+@*
+Respawn mode selection:@*
+automatic, with speed selection.@*
+Or rebirth mode step by step.@*
+@*
+4)Drawing according to the logic of the algorithm, first the entire field is filled randomly with walls - i.e. for each cell is randomly determined,@*
+whether it will be free or impassable - and then the state of the map is updated several times in accordance with the conditions.@*
+@*
+5)Clearing the render screen and ui elements.@*
+@*
+II)In the maze tab:@*
+Data source mode selection: @*
+1)Generate a random maze with a selectable number of rows and columns.@*
+2)Or load data from a file, the file should look like:@*
+4 4@*
+0 0 0 1@*
+1 0 1 1@*
+0 1 0 1@*
+0 0 0 1@*
+@*
+1 0 1 0@*
+0 0 1 0@*
+1 1 0 1@*
+1 1 1 1@*
+Where there is a number of rows and columns, and two matrices containing the position of vertical and horizontal walls.@*
+@*
+3)Drawing according to the logic of the algorithm, a labyrinth with "thin walls" is a table of n rows by m columns.@*
+There can be "walls" between table cells. Also, "walls" surround the entire table as a whole. The maze is generated without isolated areas and loops.@*
+@*
+4)Finding the shortest path in a maze from point to point.@*
+@*
+5)Clearing the render screen and ui elements.@*
+6)Saving the rendered maze to file.@*
+@*
+@*
+Manual:@*
+Generate random cave - while in the cave tab, press radiobutton-"From random", select spinboxes values, select life/death variables value, select respawn mode@*
+one of the radiobutton, press the "Draw" button.@*
+@*
+Build a cave from a file - click the "Load" button, select a file.@*
+@*
+Draw rebirth step by step - select the rebirth mode - "manual", and press the "Next step" button until the picture changes.@*
+@*
+In auto mode, you can change the speed of rebirth with a slider.@*
+@*
+Clear screen - click clear button.@*
+@*
+Change tab - click on the Maze/Cave tab.@*
+@*
+To generate a maze, while in the maze tab, select the data source (randomly or from a file) by clicking on the appropriate "radiobutton".@*
+If you have chosen a random mode, select the number of rows and columns, if the mode is from a file, then select the file by clicking on the "Load" button.@*
+To draw, click the "Draw" button.@*
+@*
+To search for a path in the labyrinth, left-click on the area of the maze screen render screen where you need to put the first point, clicking the second time - put the second point and build the path.@*
+Clicking there once will start a new selection of start and end points.@*
+@*
+To clear the render screen and UI elements, click the 'Clear' button.@*
+@*
+To save the file, first draw the data by clicking on the "Draw" button, and then click on the "Save" button.@*
+@*
+Thank you.@*
+@bye

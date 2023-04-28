@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>cave.png</file>
+        <file>check_false.png</file>
+        <file>check_pass.png</file>
+        <file>hand.png</file>
+        <file>icon.png</file>
+        <file>load.png</file>
+        <file>point.png</file>
+        <file>save.png</file>
+    </qresource>
+</RCC>
